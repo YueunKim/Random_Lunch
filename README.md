@@ -19,10 +19,10 @@
 ## 🔎 Meaning
 * HTML, CSS, Javascript를 독학하며 혼자 처음으로 만들어본 프로젝트입니다.
 * 정적인 웹 구현에 필요한 기초적인 HTML, CSS 지식을 쌓는데 도움이 되었습니다.
-* Javascript에 대한 기본 이해를 바탕으로 원하는 동적기능을 추가해보는 경험을 쌓을 수 있었습니다.
-* 처음에는 원하는 동네를 클릭하면 바로 옆에 랜덤으로 선정한 음식점이 출력되는 version1을 만들었습니다.
+* Javascript에 대한 기본적인 이해를 바탕으로 원하는 동적기능을 추가해보는 경험을 쌓을 수 있었습니다.
+* 처음에는 원하는 동네를 클릭하면 버튼 옆에 랜덤으로 선정한 음식점이 출력되는 version1을 만들었습니다.
 ![version1](https://user-images.githubusercontent.com/65431814/173997339-67616f0d-9e3b-4582-9a3b-ac3af8695d02.gif)
 
 * 이후 동료의 피드백을 받아 원하는 음식 종류도 선택 기능을 추가했습니다.
-* Media Query의 기본적인 사용법을 익혀 가로 길이가 970px보다 작아질 때를 위한 반응형 웹 최종 version2를 완성했습니다. 
+* Media Query로 가로 길이가 970px보다 작아질 때를 위한 반응형 웹 version2를 완성했습니다. 
 ![version2_samll](https://user-images.githubusercontent.com/65431814/173997371-e62afe0b-b439-4ff6-9de3-74a6b42a0222.gif)
