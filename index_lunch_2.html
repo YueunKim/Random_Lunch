@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_lunch_2.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+
+    <title>충남대학교 점심 랜덤 게임</title>
+    <script src="main_lunch_2.js" defer></script>
+</head>
+<body>
+    <div class = "datetitle">
+        <span id="date"></span>
+        <span id="title">오늘 점심은?🍴</span>
+    </div>
+
+    <section class="question">
+        <!-- 가고 싶은 동네 -->
+        <div class="where">
+            <span class="where_content">📢 어디로 가고 싶어?</span>
+            <ul class = "where_container">
+                <li><button class = "btn_where" id="juk">죽동</button></li>  
+                <li><button class = "btn_where" id="goog">궁동</button></li>
+                <li><button class = "btn_where" id="eoeun">어은동</button></li> 
+                <li><button class = "btn_where" id="bong">봉명동</button></li>
+                <li><button class = "btn_where" id="Random">랜덤</button></li> 
+            </ul>
+        </div>
+        
+        <!-- 원하는 음식 종류 -->
+        <div class="kind">
+            <span class="kind_content">📢 어떤 음식 먹을래?</span>
+            <ul class = "kind_container">
+                <li><button class = "btn_kind" id="han">한식</button></li>  
+                <li><button class = "btn_kind" id="yang">양식</button></li>
+                <li><button class = "btn_kind" id="joog">중식</button></li> 
+                <li><button class = "btn_kind" id="ill">일식</button></li>
+                <li><button class = "btn_kind" id="RandomMenu">랜덤</button></li> 
+            </ul>
+    </section>
+    <!-- 대답 -->
+    <section class="answer">
+        <span class="then"></span>
+        <span id="where_fix"></span>
+        <span class="inhere"></span>
+        <span id="kind_fix"></span>
+        <span class="go"></span>
+    </section>
+    
+</body>
+</html>
+

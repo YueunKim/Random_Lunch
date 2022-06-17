@@ -1,0 +1,204 @@
+:root {
+  --text-color: #0c0f0fef;
+  --background-color: rgb(228, 228, 222);
+  --accent-color: #eb4848;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Serif KR", serif;
+  font-weight: 600;
+  font-size: 20%;
+}
+
+/* 날짜와 타이틀 */
+.datetitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.datetitle #date {
+  font-size: 2rem;
+  padding-bottom: 5%;
+}
+
+.datetitle #title {
+  font-size: 4rem;
+}
+
+/* 질문 */
+.question .where,
+.question .kind {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.question .where .where_content,
+.question .kind .kind_content {
+  font-size: 2rem;
+}
+
+.question .where .where_container,
+.question .kind .kind_container {
+  list-style: none;
+  display: flex;
+}
+
+.question .where .where_container li,
+.question .kind .kind_container li {
+  padding-left: 2%;
+}
+
+.question .where .where_container .btn_where,
+.question .kind .kind_container .btn_kind {
+  font-family: "Noto Serif KR", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  width: 7rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+/* 위치 버튼 */
+.question .where .where_container .btn_where {
+  color: var(--text-color);
+  background: #ff9378;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  border-bottom-color: rgba(0, 0, 0, 0.34);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34) inset,
+    0 2px 0 -1px rgba(0, 0, 0, 0.13), 0 3px 0 -1px rgba(0, 0, 0, 0.08),
+    0 3px 13px -1px rgba(0, 0, 0, 0.21);
+}
+
+.question .where .where_container .btn_where:active {
+  top: 1px;
+  background-color: #e68b75;
+  border-color: rgba(0, 0, 0, 0.34) rgba(0, 0, 0, 0.21) rgba(0, 0, 0, 0.21);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.89), 0 1px rgba(0, 0, 0, 0.05) inset;
+  position: relative;
+}
+
+/* 음식 종류 버튼 */
+.question .kind .kind_container .btn_kind {
+  color: var(--text-color);
+  background: #ffadb7;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  border-bottom-color: rgba(0, 0, 0, 0.34);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34) inset,
+    0 2px 0 -1px rgba(0, 0, 0, 0.13), 0 3px 0 -1px rgba(0, 0, 0, 0.08),
+    0 3px 13px -1px rgba(0, 0, 0, 0.21);
+}
+
+.question .kind .kind_container .btn_kind:active {
+  top: 1px;
+  background-color: #e69aa3;
+  border-color: rgba(0, 0, 0, 0.34) rgba(0, 0, 0, 0.21) rgba(0, 0, 0, 0.21);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.89), 0 1px rgba(0, 0, 0, 0.05) inset;
+  position: relative;
+}
+
+/* 대답 */
+.answer {
+  display: flex;
+  padding-top: 5%;
+  font-size: 3rem;
+}
+
+.answer .then,
+.answer .inhere,
+.answer .go {
+  padding-right: 1rem;
+}
+
+.answer #where_fix,
+.answer #kind_fix {
+  color: var(--accent-color);
+}
+
+/* 배경 이미지 */
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+  opacity: 0.15;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 사이즈 작아졌을 때 */
+@media screen and (max-width: 970px) {
+  .datetitle #date {
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+  }
+
+  .datetitle #title {
+    font-size: 2.5rem;
+  }
+
+  .question .where,
+  .question .kind {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .question .where .where_content,
+  .question .kind .kind_content {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .question .where .where_container,
+  .question .kind .kind_container {
+    list-style: none;
+    display: flex;
+  }
+
+  .question .where .where_container .btn_where,
+  .question .kind .kind_container .btn_kind {
+    font-family: "Noto Serif KR", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0.8rem;
+    width: 5rem;
+    height: 2.5rem;
+    cursor: pointer;
+  }
+
+  .answer {
+    display: flex;
+    padding-top: 3%;
+    font-size: 2rem;
+  }
+}

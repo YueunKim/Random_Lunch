@@ -1,0 +1,99 @@
+:root {
+  --text-color: #0c0f0fef;
+  --background-color: rgb(228, 228, 222);
+  --accent-color: #CE9EAD;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*박스모델에 패팅과 보더의 사이즈를 아이템 너비와 높이에 포함*/
+}
+
+body {
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.datetitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.datetitle #date{
+  /* padding: 8px 12px; */
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.datetitle #title{
+  /* padding: 8px 12px; */
+  font-size: 50px;
+}
+
+.container {
+  list-style: none;
+  padding-left: 60px;
+	width: 420px;
+	height: 330px;
+}
+
+.container li {
+  padding-bottom: 20px;
+}
+
+.container li button {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: var(--background-color);
+  border-radius: 3px;
+  width: 100px; height: 50px;
+}
+
+.container li span {
+  padding-left: 10px;
+  position: fixed;
+}
+
+
+#juk, #gung, #eoeun, #bong, #randomMenu {
+  background: var(--background-color);
+  /* background: linear-gradient(0deg, var(--background-color) 0%, rgb(238, 240, 162) 100%); */
+}
+#juk:hover, #gung:hover, #eoeun:hover, #bong:hover, #randomMenu:hover {
+  background: var(--background-color);
+  background: linear-gradient(0deg, rgb(129, 129, 129) 0%, rgb(232, 233, 233) 100%);
+}
+
+
+.bgImage {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+  opacity: 0.35; /*흐리게*/
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
