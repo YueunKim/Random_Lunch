@@ -6,7 +6,7 @@
 * 주요 기능 : 가고 싶은 동네와 원하는 음식의 종류를 고르면 랜덤으로 음식점을 선정해 줍니다.
 * 개발 인원 : 1명
 * 개발 기간 : 2022.04 ~ 2022.04
-* DEMO : https://yueunkim.github.io/random/index_lunch_2.html
+* DEMO : https://yueunkim.github.io/random/lunch_2.html
 
 ## ❓ Why
 * 충남대학교에서 일할 당시 점심 메뉴를 고르기 위해 고민하는 시간을 줄여보고자 만들었습니다.  
