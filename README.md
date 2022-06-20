@@ -6,7 +6,7 @@
 * 주요 기능 : 가고 싶은 동네와 원하는 음식의 종류를 고르면 랜덤으로 음식점을 선정해 줍니다.
 * 개발 인원 : 1명
 * 개발 기간 : 2022.04 ~ 2022.04
-* DEMO : https://yueunkim.github.io/random/lunch_2.html
+* DEMO : https://yueunkim.github.io/Random_Lunch/lunch_2.html
 
 ## ❓ Why
 * 충남대학교에서 일할 당시 점심 메뉴를 고르기 위해 고민하는 시간을 줄여보고자 만들었습니다.  
@@ -26,3 +26,8 @@
 * 이후 동료의 피드백을 받아 원하는 음식 종류도 선택 기능을 추가했습니다.
 * Media Query로 가로 길이가 970px보다 작아질 때를 위한 반응형 웹 version2를 완성했습니다. 
 ![version2_samll](https://user-images.githubusercontent.com/65431814/173997371-e62afe0b-b439-4ff6-9de3-74a6b42a0222.gif)
+
+## 🔨 Improvement
+* 새로고침을 했을 때 배경이미지가 더 빨리 출력될 수 있는 방법 알아보기
+* 가고 싶은 동네를 선택하지 않고 음식 종류를 선택했을 때 나올 문구 수정하기
+* 동네 선택 -> 음식 선택 -> 다른 동네 선택 시 이미 출력된 음식 부분 안보이게 하기
